@@ -1,0 +1,22 @@
+{ "family": "road_markings", "entries": [
+  { "id": "MRK-001", "name": "Zebra crossing", "glyph": "mk_zebra", "severityDefault": "S2", "description": "Transverse stripes marking a pedestrian crossing where pedestrians have priority.", "references": [ { "doc": "IRC-103", "relation": "related_guidance" } ] },
+  { "id": "MRK-002", "name": "Stop line", "glyph": "mk_stop_line", "severityDefault": "S2", "description": "Solid transverse line indicating where vehicles must stop." },
+  { "id": "MRK-003", "name": "Give-way marking", "glyph": "mk_give_way", "severityDefault": "S2", "description": "Transverse broken line and/or triangle marking indicating where to yield." },
+  { "id": "MRK-004", "name": "Broken lane line", "glyph": "mk_lane", "glyphVariant": "broken", "severityDefault": "S1", "description": "Dashed longitudinal line separating lanes; lane changes permitted with care." },
+  { "id": "MRK-005", "name": "Solid lane line", "glyph": "mk_lane", "glyphVariant": "solid", "severityDefault": "S1", "description": "Continuous longitudinal line discouraging or prohibiting crossing." },
+  { "id": "MRK-006", "name": "Double solid line", "glyph": "mk_lane", "glyphVariant": "double", "severityDefault": "S2", "description": "Double continuous centre line prohibiting crossing in either direction." },
+  { "id": "MRK-007", "name": "Centre line", "glyph": "mk_lane", "glyphVariant": "centre", "severityDefault": "S1", "description": "Line separating opposing traffic flows." },
+  { "id": "MRK-008", "name": "Edge line", "glyph": "mk_edge", "severityDefault": "S1", "description": "Continuous line marking the edge of the carriageway." },
+  { "id": "MRK-009", "name": "Direction arrows", "glyph": "mk_arrow", "glyphVariant": "ahead_left", "variants": ["ahead", "left", "right", "ahead_left", "ahead_right"], "severityDefault": "S1", "description": "Pavement arrows indicating permitted movements from a lane." },
+  { "id": "MRK-010", "name": "Yellow box junction", "glyph": "mk_box", "severityDefault": "S2", "description": "Yellow cross-hatched box that must not be entered unless the exit is clear." },
+  { "id": "MRK-011", "name": "Chevron and hatch markings", "glyph": "mk_chevron", "severityDefault": "S2", "description": "Diagonal or chevron markings separating traffic or protecting a hazard." },
+  { "id": "MRK-012", "name": "Bus lane", "glyph": "mk_bus_lane", "severityDefault": "S1", "description": "Lane reserved for buses, identified by a legend and lane line." },
+  { "id": "MRK-013", "name": "Cycle lane", "glyph": "mk_cycle_lane", "severityDefault": "S1", "description": "Lane reserved for cyclists, identified by a bicycle symbol." },
+  { "id": "MRK-014", "name": "Speed-limit pavement marking", "glyph": "mk_speed", "legend": "40", "severityDefault": "S1", "speed": { "legalLimit": "defines", "advisory": "never", "notes": "Pavement legend repeats a posted limit; RVHL reads the value only from the detected legend or map data." }, "description": "Speed number painted on the pavement repeating the posted limit." },
+  { "id": "MRK-015", "name": "School marking", "glyph": "mk_school", "severityDefault": "S2", "description": "Pavement legend warning of a school zone." },
+  { "id": "MRK-016", "name": "Rumble strips (marking)", "glyph": "mk_rumble", "severityDefault": "S1", "description": "Raised transverse thermoplastic bars producing audible and tactile warning.", "references": [ { "doc": "IRC-99", "relation": "related_guidance" } ] },
+  { "id": "MRK-017", "name": "Raised road studs", "glyph": "mk_studs", "severityDefault": "S1", "description": "Raised pavement markers (cat's eyes) supplementing lane lines at night." },
+  { "id": "MRK-018", "name": "Reflective markers", "glyph": "mk_reflector", "severityDefault": "S1", "description": "Retroreflective markers delineating lanes, edges or hazards." },
+  { "id": "MRK-019", "name": "Faded markings", "glyph": "mk_lane", "glyphVariant": "faded", "standardStatus": "non_standard_hazard", "severityDefault": "S2", "description": "Worn markings that are hard to see, especially at night or in rain." },
+  { "id": "MRK-020", "name": "Missing markings", "glyph": "mk_lane", "glyphVariant": "missing", "standardStatus": "non_standard_hazard", "severityDefault": "S2", "description": "Section where required markings are absent." }
+]}

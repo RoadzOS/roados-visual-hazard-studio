@@ -1,0 +1,21 @@
+{ "family": "temporary_obstacles", "entries": [
+  { "id": "TMP-001", "name": "Traffic cone", "glyph": "cone", "glyphVariant": "single", "variants": ["single", "multiple", "fallen"], "severityDefault": "S2", "description": "Single traffic cone on the carriageway." },
+  { "id": "TMP-002", "name": "Multiple traffic cones", "glyph": "cone", "glyphVariant": "multiple", "severityDefault": "S3", "description": "Line of cones channelling or closing a lane." },
+  { "id": "TMP-003", "name": "Fallen traffic cone", "glyph": "cone", "glyphVariant": "fallen", "severityDefault": "S3", "description": "Knocked-over cone lying in a lane." },
+  { "id": "TMP-004", "name": "Plastic barricade", "glyph": "barricade", "glyphVariant": "plastic", "variants": ["plastic", "water_filled", "metal"], "severityDefault": "S3", "description": "Lightweight plastic barricade." },
+  { "id": "TMP-005", "name": "Water-filled barricade", "glyph": "barricade", "glyphVariant": "water_filled", "severityDefault": "S3", "description": "Ballasted plastic barrier filled with water." },
+  { "id": "TMP-006", "name": "Metal barricade", "glyph": "barricade", "glyphVariant": "metal", "severityDefault": "S3", "description": "Steel frame barricade, typical of police checkpoints." },
+  { "id": "TMP-007", "name": "Concrete barrier", "glyph": "jersey_barrier", "severityDefault": "S3", "description": "Temporary concrete barrier segment." },
+  { "id": "TMP-008", "name": "Yellow construction board", "glyph": "construction_board", "severityDefault": "S2", "description": "Yellow board announcing construction work." },
+  { "id": "TMP-009", "name": "Temporary warning board", "glyph": "temp_warning_board", "severityDefault": "S2", "description": "Portable warning sign on a stand." },
+  { "id": "TMP-010", "name": "Fallen signboard", "glyph": "fallen_sign", "severityDefault": "S3", "description": "Sign or board lying on the carriageway." },
+  { "id": "TMP-011", "name": "Construction fencing", "glyph": "fence", "severityDefault": "S2", "description": "Temporary fence or sheet barrier around works." },
+  { "id": "TMP-012", "name": "Excavator", "glyph": "excavator", "severityDefault": "S3", "description": "Excavator working in or beside the carriageway." },
+  { "id": "TMP-013", "name": "Road roller", "glyph": "road_roller", "severityDefault": "S3", "description": "Slow-moving compactor in the work zone." },
+  { "id": "TMP-014", "name": "Construction material", "glyph": "material_pile", "severityDefault": "S3", "description": "Stacked or dumped material (bricks, aggregate, pipes) on the road." },
+  { "id": "TMP-015", "name": "Open excavation", "glyph": "excavation", "severityDefault": "S5", "description": "Open trench or pit in the carriageway." },
+  { "id": "TMP-016", "name": "Temporary road ramp", "glyph": "ramp", "severityDefault": "S3", "description": "Temporary ramp linking different road levels." },
+  { "id": "TMP-017", "name": "Cable across road", "glyph": "cable", "severityDefault": "S3", "description": "Cable or hose laid across the carriageway." },
+  { "id": "TMP-018", "name": "Temporary diversion", "glyph": "diversion", "severityDefault": "S2", "description": "Traffic diverted onto a temporary alignment." },
+  { "id": "TMP-019", "name": "Temporary lane closure", "glyph": "lane_closure", "severityDefault": "S3", "description": "One or more lanes closed for works." }
+]}

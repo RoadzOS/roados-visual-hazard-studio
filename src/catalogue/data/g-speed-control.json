@@ -1,0 +1,16 @@
+{ "family": "speed_control", "entries": [
+  { "id": "SPD-001", "name": "Normal speed breaker", "glyph": "speed_breaker", "glyphVariant": "marked", "variants": ["marked", "small", "medium", "high", "unmarked"], "standardStatus": "convention_inspired", "severityDefault": "S2", "description": "Marked speed hump of typical profile." },
+  { "id": "SPD-002", "name": "Small speed breaker", "glyph": "speed_breaker", "glyphVariant": "small", "severityDefault": "S2", "description": "Low-profile hump." },
+  { "id": "SPD-003", "name": "Medium speed breaker", "glyph": "speed_breaker", "glyphVariant": "medium", "severityDefault": "S3", "description": "Moderate-profile hump requiring clear speed reduction." },
+  { "id": "SPD-004", "name": "High speed breaker", "glyph": "speed_breaker", "glyphVariant": "high", "severityDefault": "S4", "description": "Tall hump that can strike the underbody of low vehicles." },
+  { "id": "SPD-005", "name": "Unmarked speed breaker", "glyph": "speed_breaker", "glyphVariant": "unmarked", "severityDefault": "S4", "description": "Hump without paint or warning sign; very hard to see at night." },
+  { "id": "SPD-006", "name": "Oversized hump", "glyph": "speed_breaker", "glyphVariant": "oversized", "severityDefault": "S4", "description": "Hump far larger than typical calming devices." },
+  { "id": "SPD-007", "name": "Sharp-edged hump", "glyph": "speed_breaker", "glyphVariant": "sharp", "severityDefault": "S4", "description": "Hump with a steep or square edge." },
+  { "id": "SPD-008", "name": "Broken speed breaker", "glyph": "speed_breaker", "glyphVariant": "broken", "severityDefault": "S3", "description": "Damaged hump with broken edges or exposed material." },
+  { "id": "SPD-009", "name": "Multiple speed breakers", "glyph": "speed_breaker", "glyphVariant": "multiple", "severityDefault": "S3", "description": "Series of humps in quick succession." },
+  { "id": "SPD-010", "name": "Rumble strips", "glyph": "rumble_strips", "standardStatus": "convention_inspired", "severityDefault": "S1", "description": "Transverse raised strips producing vibration and noise.", "references": [ { "doc": "IRC-99", "relation": "related_guidance" } ] },
+  { "id": "SPD-011", "name": "Raised pedestrian crossing", "glyph": "raised_crossing", "standardStatus": "convention_inspired", "severityDefault": "S2", "description": "Crossing built as a flat-topped hump.", "references": [ { "doc": "IRC-103", "relation": "related_guidance" } ] },
+  { "id": "SPD-012", "name": "Speed cushion", "glyph": "speed_cushion", "standardStatus": "convention_inspired", "severityDefault": "S2", "description": "Partial-width humps that wide vehicles can straddle." },
+  { "id": "SPD-013", "name": "Sudden road elevation", "glyph": "step_up", "severityDefault": "S3", "description": "Abrupt rise in road level, e.g. at a culvert or new layer." },
+  { "id": "SPD-014", "name": "Railway crossing hump", "glyph": "railway_hump", "severityDefault": "S3", "description": "Raised track bed creating a hump at a level crossing." }
+]}

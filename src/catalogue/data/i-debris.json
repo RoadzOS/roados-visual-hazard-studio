@@ -1,0 +1,22 @@
+{ "family": "debris", "entries": [
+  { "id": "DEB-001", "name": "Small stone", "glyph": "stone", "glyphVariant": "small", "variants": ["small", "medium", "large", "boulder"], "severityDefault": "S2", "dimensions": { "typical": "< 10 cm (RoadOS classification proposal)", "measuredFields": ["size_class", "height_mm", "lane_position"] }, "description": "Small stone that can be thrown up or unsettle two-wheelers." },
+  { "id": "DEB-002", "name": "Medium stone", "glyph": "stone", "glyphVariant": "medium", "severityDefault": "S3", "dimensions": { "typical": "10–25 cm (RoadOS classification proposal)", "measuredFields": ["size_class", "height_mm", "lane_position"] }, "description": "Stone large enough to damage tyres or underbody." },
+  { "id": "DEB-003", "name": "Large stone", "glyph": "stone", "glyphVariant": "large", "severityDefault": "S4", "dimensions": { "typical": "25–60 cm (RoadOS classification proposal)", "measuredFields": ["size_class", "height_mm", "lane_position"] }, "description": "Stone that blocks a wheel path." },
+  { "id": "DEB-004", "name": "Boulder", "glyph": "stone", "glyphVariant": "boulder", "severityDefault": "S5", "dimensions": { "typical": "> 60 cm (RoadOS classification proposal)", "measuredFields": ["size_class", "height_mm", "lane_position"] }, "description": "Boulder obstructing a lane." },
+  { "id": "DEB-005", "name": "Falling rock", "glyph": "falling_rocks", "severityDefault": "S4", "description": "Rock actively falling or recently fallen from a slope." },
+  { "id": "DEB-006", "name": "Gravel", "glyph": "gravel", "glyphVariant": "gravel", "severityDefault": "S2", "description": "Loose aggregate on the surface reducing grip." },
+  { "id": "DEB-007", "name": "Sand", "glyph": "pile", "glyphVariant": "sand", "severityDefault": "S2", "description": "Sand spread or heaped on the carriageway." },
+  { "id": "DEB-008", "name": "Soil pile", "glyph": "pile", "glyphVariant": "soil", "severityDefault": "S3", "description": "Heap of soil dumped on the road." },
+  { "id": "DEB-009", "name": "Mud pile", "glyph": "pile", "glyphVariant": "mud", "severityDefault": "S3", "description": "Wet mud heap or slide deposit." },
+  { "id": "DEB-010", "name": "Fallen tree", "glyph": "fallen_tree", "severityDefault": "S5", "description": "Tree lying across one or more lanes." },
+  { "id": "DEB-011", "name": "Tree branch", "glyph": "branch", "severityDefault": "S3", "description": "Branch or limb on the road." },
+  { "id": "DEB-012", "name": "Broken glass", "glyph": "glass", "severityDefault": "S2", "description": "Glass fragments that can puncture tyres." },
+  { "id": "DEB-013", "name": "Metal scrap", "glyph": "scrap", "severityDefault": "S3", "description": "Sharp metal debris." },
+  { "id": "DEB-014", "name": "Tyre on road", "glyph": "tyre", "severityDefault": "S3", "description": "Tyre or tread fragment lying in a lane." },
+  { "id": "DEB-015", "name": "Vehicle parts", "glyph": "vehicle_parts", "severityDefault": "S3", "description": "Bumpers, lamps or other parts after a collision or breakdown." },
+  { "id": "DEB-016", "name": "Garbage", "glyph": "garbage", "severityDefault": "S2", "description": "Waste bags or dumped refuse on the carriageway." },
+  { "id": "DEB-017", "name": "Cargo spillage", "glyph": "cargo", "severityDefault": "S4", "description": "Load fallen or spilled from a vehicle." },
+  { "id": "DEB-018", "name": "Animal carcass", "glyph": "carcass", "severityDefault": "S3", "description": "Dead animal on the road." },
+  { "id": "DEB-019", "name": "Fallen electric pole", "glyph": "fallen_pole", "severityDefault": "S5", "description": "Fallen utility pole, possibly with live wires." },
+  { "id": "DEB-020", "name": "Displaced road furniture", "glyph": "displaced_furniture", "severityDefault": "S3", "description": "Delineators, bollards or barriers knocked into the lane." }
+]}

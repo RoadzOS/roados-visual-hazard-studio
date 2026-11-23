@@ -1,0 +1,16 @@
+{ "family": "bridge_structures", "entries": [
+  { "id": "BRG-001", "name": "Narrow bridge", "glyph": "narrow_bridge", "standardFrame": "warning_triangle", "standardStatus": "convention_inspired", "severityDefault": "S3", "description": "Bridge narrower than the approach carriageway." },
+  { "id": "BRG-002", "name": "Damaged bridge surface", "glyph": "bridge", "glyphVariant": "damaged", "severityDefault": "S4", "description": "Potholes, exposed reinforcement or broken deck surface on a bridge." },
+  { "id": "BRG-003", "name": "Broken bridge parapet", "glyph": "bridge", "glyphVariant": "parapet", "severityDefault": "S4", "description": "Missing or broken bridge railing or parapet." },
+  { "id": "BRG-004", "name": "Damaged expansion joint", "glyph": "expansion_joint", "severityDefault": "S3", "description": "Expansion joint with gaps or protruding plates." },
+  { "id": "BRG-005", "name": "Low-clearance bridge", "glyph": "low_clearance", "glyphVariant": "bridge", "severityDefault": "S4", "description": "Overbridge with limited vertical clearance." },
+  { "id": "BRG-006", "name": "Tunnel lighting failure", "glyph": "tunnel", "glyphVariant": "dark", "severityDefault": "S3", "description": "Tunnel with lighting out of service." },
+  { "id": "BRG-007", "name": "Steep bridge approach", "glyph": "bridge", "glyphVariant": "steep", "severityDefault": "S3", "description": "Hump-backed or steep approach that hides the road beyond." },
+  { "id": "BRG-008", "name": "Damaged flyover joint", "glyph": "flyover", "glyphVariant": "damaged", "severityDefault": "S3", "description": "Damaged joint on an elevated road." },
+  { "id": "BRG-009", "name": "Flooded underpass", "glyph": "underpass", "glyphVariant": "flooded", "severityDefault": "S5", "description": "Underpass with standing water of unknown depth." },
+  { "id": "BRG-010", "name": "Railway crossing damage", "glyph": "rail_track", "glyphVariant": "damaged", "severityDefault": "S4", "description": "Broken surface between rails at a level crossing." },
+  { "id": "BRG-011", "name": "Unprotected embankment", "glyph": "embankment", "severityDefault": "S4", "description": "Embankment at a bridge approach without barrier." },
+  { "id": "BRG-012", "name": "Landslide", "glyph": "landslide", "severityDefault": "S5", "description": "Slope failure depositing material on, or removing, the road." },
+  { "id": "BRG-013", "name": "Road collapse", "glyph": "road_collapse", "severityDefault": "S5", "description": "Section of carriageway collapsed or washed away." },
+  { "id": "BRG-014", "name": "Retaining wall damage", "glyph": "retaining_wall", "severityDefault": "S4", "description": "Cracked or bulging retaining wall beside the road." }
+]}

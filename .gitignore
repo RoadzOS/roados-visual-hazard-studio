@@ -1,0 +1,9 @@
+node_modules
+dist
+*.local
+.DS_Store
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Local GitHub Desktop repo, not part of the project
+/RoadOS Visual Hazard Studio/

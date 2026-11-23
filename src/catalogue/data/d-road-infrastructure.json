@@ -1,0 +1,19 @@
+{ "family": "road_infrastructure", "entries": [
+  { "id": "INF-001", "name": "Painted divider", "glyph": "inf_painted_divider", "severityDefault": "S1", "description": "Painted median separating opposing flows without a physical barrier." },
+  { "id": "INF-002", "name": "Raised median", "glyph": "inf_median", "severityDefault": "S1", "description": "Kerbed raised median separating carriageways." },
+  { "id": "INF-003", "name": "Concrete divider", "glyph": "jersey_barrier", "severityDefault": "S1", "description": "Continuous concrete safety-shape barrier separating carriageways.", "references": [ { "doc": "IRC-119", "relation": "related_guidance" } ] },
+  { "id": "INF-004", "name": "Metal crash barrier", "glyph": "inf_wbeam", "severityDefault": "S1", "description": "Steel beam guardrail on posts containing errant vehicles.", "references": [ { "doc": "IRC-119", "relation": "related_guidance" } ] },
+  { "id": "INF-005", "name": "Pedestrian guardrail", "glyph": "inf_guardrail", "severityDefault": "S1", "description": "Railing separating footpath from carriageway and channelling pedestrians.", "references": [ { "doc": "IRC-103", "relation": "related_guidance" } ] },
+  { "id": "INF-006", "name": "Road delineator", "glyph": "inf_delineator", "severityDefault": "S1", "description": "Roadside post with retroreflector marking road alignment." },
+  { "id": "INF-007", "name": "Hazard marker", "glyph": "inf_hazard_marker", "severityDefault": "S2", "description": "Striped board marking an obstruction such as a pier, culvert or narrowing." },
+  { "id": "INF-008", "name": "Chevron marker", "glyph": "inf_chevron_marker", "severityDefault": "S2", "description": "Chevron board guiding drivers around a curve." },
+  { "id": "INF-009", "name": "Crash cushion", "glyph": "inf_crash_cushion", "severityDefault": "S2", "description": "Energy-absorbing attenuator protecting a fixed object or barrier end.", "references": [ { "doc": "IRC-119", "relation": "related_guidance" } ] },
+  { "id": "INF-010", "name": "Bollard", "glyph": "inf_bollard", "severityDefault": "S1", "description": "Short post controlling vehicle access or protecting pedestrians." },
+  { "id": "INF-011", "name": "Traffic island", "glyph": "inf_island", "severityDefault": "S2", "description": "Raised or marked island channelling traffic at a junction." },
+  { "id": "INF-012", "name": "Streetlight", "glyph": "streetlight", "glyphVariant": "on", "variants": ["on", "failed", "missing"], "severityDefault": "S1", "description": "Road lighting column." },
+  { "id": "INF-013", "name": "Signpost", "glyph": "inf_signpost", "severityDefault": "S1", "description": "Post supporting a road sign; a fixed roadside object." },
+  { "id": "INF-014", "name": "Overhead gantry", "glyph": "inf_gantry", "severityDefault": "S1", "description": "Overhead structure carrying signs or signals across the carriageway." },
+  { "id": "INF-015", "name": "Boundary stone", "glyph": "inf_boundary_stone", "severityDefault": "S1", "description": "Stone marking the boundary of road land." },
+  { "id": "INF-016", "name": "Kilometre stone", "glyph": "inf_km_stone", "severityDefault": "S1", "description": "Roadside stone showing distance and route information.", "references": [ { "doc": "IRC-67", "relation": "related_guidance" } ] },
+  { "id": "INF-017", "name": "Road railing", "glyph": "inf_railing", "severityDefault": "S1", "description": "Railing along bridges, culverts or embankments." }
+]}

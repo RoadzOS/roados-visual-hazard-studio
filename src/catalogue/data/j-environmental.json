@@ -1,0 +1,21 @@
+{ "family": "environmental", "entries": [
+  { "id": "ENV-001", "name": "Waterlogging", "glyph": "water", "severityDefault": "S3", "description": "Standing water on the carriageway after rain." },
+  { "id": "ENV-002", "name": "Flooded road", "glyph": "flood", "severityDefault": "S4", "description": "Water deep enough to submerge wheels or stall engines." },
+  { "id": "ENV-003", "name": "Flowing water across road", "glyph": "flowing_water", "severityDefault": "S5", "description": "Moving water across the road (causeway, stream overflow) that can sweep vehicles." },
+  { "id": "ENV-004", "name": "Water-covered pothole", "glyph": "pothole", "glyphVariant": "water_filled", "severityDefault": "S4", "description": "Pothole concealed by water; depth unknown." },
+  { "id": "ENV-005", "name": "Mud", "glyph": "mud", "glyphVariant": "mud", "severityDefault": "S3", "description": "Mud on the surface reducing grip." },
+  { "id": "ENV-006", "name": "Slush", "glyph": "mud", "glyphVariant": "slush", "severityDefault": "S3", "description": "Wet slurry of mud and water." },
+  { "id": "ENV-007", "name": "Oil spill", "glyph": "spill", "glyphVariant": "oil", "severityDefault": "S4", "description": "Oil on the surface; very low grip." },
+  { "id": "ENV-008", "name": "Fuel spill", "glyph": "spill", "glyphVariant": "fuel", "severityDefault": "S4", "description": "Diesel or petrol on the surface; low grip and fire risk." },
+  { "id": "ENV-009", "name": "Wet road", "glyph": "wet_road", "severityDefault": "S2", "description": "Wet surface with increased stopping distance." },
+  { "id": "ENV-010", "name": "Loose sand", "glyph": "gravel", "glyphVariant": "sand", "severityDefault": "S3", "description": "Wind-blown or spilled sand on the surface." },
+  { "id": "ENV-011", "name": "Heavy rain", "glyph": "rain", "severityDefault": "S3", "description": "Intense rainfall reducing visibility and grip." },
+  { "id": "ENV-012", "name": "Fog", "glyph": "fog", "glyphVariant": "fog", "severityDefault": "S3", "description": "Fog reducing visibility." },
+  { "id": "ENV-013", "name": "Dense fog", "glyph": "fog", "glyphVariant": "dense", "severityDefault": "S4", "description": "Dense fog with visibility well below stopping distance." },
+  { "id": "ENV-014", "name": "Smoke", "glyph": "smoke", "severityDefault": "S3", "description": "Smoke from fires or burning crops reducing visibility." },
+  { "id": "ENV-015", "name": "Dust", "glyph": "dust", "severityDefault": "S3", "description": "Dust cloud or storm." },
+  { "id": "ENV-016", "name": "Sun glare", "glyph": "sun_glare", "severityDefault": "S2", "description": "Low sun dazzling the driver." },
+  { "id": "ENV-017", "name": "Poor night visibility", "glyph": "night", "severityDefault": "S2", "description": "Dark unlit road with poor contrast." },
+  { "id": "ENV-018", "name": "Fallen trees during storms", "glyph": "storm_tree", "severityDefault": "S4", "description": "Storm conditions with trees or branches falling." },
+  { "id": "ENV-019", "name": "Strong crosswind", "glyph": "crosswind", "standardFrame": "warning_triangle", "standardStatus": "convention_inspired", "severityDefault": "S3", "description": "Gusting side wind on exposed sections and bridges." }
+]}

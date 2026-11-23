@@ -1,0 +1,10 @@
+{ "family": "vehicle_context", "entries": [
+  { "id": "VEH-001", "name": "Current vehicle speed", "glyph": "speedometer", "severityDefault": "S1", "description": "Ego-vehicle speed from CAN bus or GNSS; displayed as an instrument number, never as a limit." },
+  { "id": "VEH-002", "name": "Vehicle dimensions", "glyph": "vehicle_dimensions", "severityDefault": "S1", "description": "Length, width and height used to evaluate clearance and width restrictions." },
+  { "id": "VEH-003", "name": "Ground clearance", "glyph": "ground_clearance", "severityDefault": "S1", "description": "Underbody clearance used to rate humps, stones and potholes." },
+  { "id": "VEH-004", "name": "Vehicle type", "glyph": "vehicle_type", "glyphVariant": "car", "variants": ["two_wheeler", "car", "bus", "truck"], "severityDefault": "S1", "description": "Vehicle class used to personalise severity." },
+  { "id": "VEH-005", "name": "Trailer or heavy-load context", "glyph": "trailer", "severityDefault": "S1", "description": "Trailer or heavy load affecting braking and gradients." },
+  { "id": "VEH-006", "name": "Vehicle approach direction", "glyph": "approach_direction", "severityDefault": "S1", "description": "Heading relative to a hazard; hazards may apply only to one direction." },
+  { "id": "VEH-007", "name": "Braking capability", "glyph": "brake", "severityDefault": "S1", "description": "Estimated braking performance, when available from the vehicle." },
+  { "id": "VEH-008", "name": "Vehicle sensor availability", "glyph": "sensors", "severityDefault": "S1", "description": "Which sensors (camera, IMU, radar) are available to detect hazards." }
+]}

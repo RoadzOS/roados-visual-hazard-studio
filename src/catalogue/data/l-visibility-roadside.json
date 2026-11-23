@@ -1,0 +1,17 @@
+{ "family": "visibility_roadside", "entries": [
+  { "id": "VIS-001", "name": "Missing streetlight", "glyph": "streetlight", "glyphVariant": "missing", "severityDefault": "S2", "description": "Lighting expected but column or lamp absent." },
+  { "id": "VIS-002", "name": "Failed streetlight", "glyph": "streetlight", "glyphVariant": "failed", "severityDefault": "S2", "description": "Lighting installed but not working." },
+  { "id": "VIS-003", "name": "Hidden traffic sign", "glyph": "hidden_sign", "severityDefault": "S3", "description": "Sign obscured by foliage, hoardings or vehicles." },
+  { "id": "VIS-004", "name": "Missing warning sign", "glyph": "missing_sign", "severityDefault": "S3", "description": "Hazard present without the warning sign normally expected." },
+  { "id": "VIS-005", "name": "Faded road markings", "glyph": "mk_lane", "glyphVariant": "faded", "severityDefault": "S2", "description": "Lane guidance worn away." },
+  { "id": "VIS-006", "name": "Missing lane markings", "glyph": "mk_lane", "glyphVariant": "missing", "severityDefault": "S2", "description": "No lane guidance on a multi-lane road." },
+  { "id": "VIS-007", "name": "Missing reflectors", "glyph": "missing_reflectors", "severityDefault": "S2", "description": "Studs or delineator reflectors missing." },
+  { "id": "VIS-008", "name": "Damaged signboard", "glyph": "damaged_sign", "severityDefault": "S2", "description": "Bent, faded or defaced sign that is hard to read." },
+  { "id": "VIS-009", "name": "Vegetation obstruction", "glyph": "vegetation", "severityDefault": "S2", "description": "Plants encroaching on the road or blocking sight lines." },
+  { "id": "VIS-010", "name": "Blind junction", "glyph": "blind_junction", "severityDefault": "S3", "description": "Junction where approaching traffic cannot be seen in time." },
+  { "id": "VIS-011", "name": "Restricted sight distance", "glyph": "restricted_sight", "severityDefault": "S3", "description": "Sight distance below what the approach speed requires." },
+  { "id": "VIS-012", "name": "Low overhead clearance", "glyph": "low_clearance", "glyphVariant": "overhead", "severityDefault": "S4", "description": "Wires, branches or structures low over the road." },
+  { "id": "VIS-013", "name": "Narrow shoulder", "glyph": "shoulder", "glyphVariant": "narrow", "severityDefault": "S2", "description": "Shoulder too narrow for stopping or two-wheelers." },
+  { "id": "VIS-014", "name": "Roadside encroachment", "glyph": "encroachment", "severityDefault": "S3", "description": "Stalls, parked vehicles or structures occupying road space." },
+  { "id": "VIS-015", "name": "Unprotected embankment", "glyph": "embankment", "severityDefault": "S4", "description": "High embankment edge without barrier." }
+]}

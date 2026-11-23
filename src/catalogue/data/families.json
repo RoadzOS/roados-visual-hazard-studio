@@ -1,0 +1,216 @@
+[
+  {
+    "id": "traffic_signals", "code": "SIG", "letter": "A", "label": "Traffic signals", "section": "signs",
+    "description": "Signal heads, signal states, police directions and electronic control devices.",
+    "frame": "roados_signal", "standardStatus": "standardised", "severityDefault": "S2", "dynamicSeverity": true,
+    "severityFactors": ["approach_speed", "distance", "visibility", "traffic_density"],
+    "escalation": ["Signal state changes to red or amber within stopping distance", "Signal failure or dark signal at junction", "Approach speed exceeds safe stopping speed for the remaining distance"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional", "notes": "Advisory speed may be computed for green-wave or stop-line approach; never shown as a legal limit." },
+    "detectionMethods": ["camera", "map_data", "v2x", "authority_feed"],
+    "confidence": { "minimumToDisplay": 0.6, "minimumToAlert": 0.8 },
+    "dimensions": { "measuredFields": ["mounting_height_m", "lamp_count"], "notes": "Physical dimensions per installation; not specified by RVHL." },
+    "references": [
+      { "doc": "VIENNA-1968", "relation": "explicitly_standardised" },
+      { "doc": "MV-DR-2017", "relation": "related_guidance" },
+      { "doc": "MUTCD-11", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "signs", "code": "RSG", "letter": "B", "label": "Regulatory, warning & informatory signs", "section": "signs",
+    "description": "Fixed road signs: mandatory/regulatory, cautionary/warning and informatory.",
+    "frame": "warning_triangle", "standardStatus": "standardised", "severityDefault": "S2", "dynamicSeverity": true,
+    "severityFactors": ["approach_speed", "distance", "visibility"],
+    "escalation": ["Vehicle approaching faster than the sign context implies", "Sign obscured, damaged or detected late", "Regulatory restriction applies to the current vehicle type or dimensions"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["camera", "map_data", "community_report"],
+    "confidence": { "minimumToDisplay": 0.6, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["sign_size_mm", "mounting_height_m"], "notes": "Sign sizes are defined by the governing code; values pending verification." },
+    "references": [
+      { "doc": "IRC-67", "relation": "explicitly_standardised" },
+      { "doc": "VIENNA-1968", "relation": "explicitly_standardised" },
+      { "doc": "MV-DR-2017", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "road_markings", "code": "MRK", "letter": "C", "label": "Road markings", "section": "markings",
+    "description": "Longitudinal, transverse and symbolic pavement markings, studs and their condition.",
+    "frame": "roados_marking", "standardStatus": "standardised", "severityDefault": "S1", "dynamicSeverity": true,
+    "severityFactors": ["visibility", "surface_condition", "approach_speed"],
+    "escalation": ["Marking faded or missing at night or in rain", "Marking conflicts with temporary layout", "Marking governs a stop or give-way obligation"],
+    "speed": { "legalLimit": "independent", "advisory": "never" },
+    "detectionMethods": ["camera", "map_data", "manual_survey"],
+    "confidence": { "minimumToDisplay": 0.5, "minimumToAlert": 0.8 },
+    "dimensions": { "measuredFields": ["line_width_mm", "dash_length_m", "gap_length_m", "retroreflectivity"], "notes": "Dimensions are defined by the applicable marking code; values pending verification." },
+    "references": [
+      { "doc": "VIENNA-1968", "relation": "inspired_by_convention" },
+      { "doc": "MORTH-SPEC", "relation": "related_guidance" },
+      { "doc": "MUTCD-11", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "road_infrastructure", "code": "INF", "letter": "D", "label": "Road infrastructure", "section": "infrastructure",
+    "description": "Dividers, barriers, delineation, lighting and roadside furniture.",
+    "frame": "roados_infrastructure", "standardStatus": "convention_inspired", "severityDefault": "S1", "dynamicSeverity": true,
+    "severityFactors": ["lane_position", "visibility", "approach_speed"],
+    "escalation": ["Element damaged, displaced or encroaching into a lane", "Unlit or unreflective element at night", "Missing end treatment facing traffic"],
+    "speed": { "legalLimit": "independent", "advisory": "never" },
+    "detectionMethods": ["camera", "map_data", "manual_survey", "community_report"],
+    "confidence": { "minimumToDisplay": 0.5, "minimumToAlert": 0.8 },
+    "dimensions": { "measuredFields": ["height_m", "width_m", "offset_from_lane_m"] },
+    "references": [
+      { "doc": "IRC-119", "relation": "related_guidance" },
+      { "doc": "MORTH-SPEC", "relation": "related_guidance" },
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "road_geometry", "code": "GEO", "letter": "E", "label": "Road geometry", "section": "hazards",
+    "description": "Alignment, junction, gradient and cross-section features that change driving demand.",
+    "frame": "roados_hazard", "standardStatus": "convention_inspired", "severityDefault": "S2", "dynamicSeverity": true,
+    "severityFactors": ["approach_speed", "distance", "visibility", "surface_condition", "vehicle_type"],
+    "escalation": ["Approach speed above curve or junction comfort speed", "Night, rain or fog reduces sight distance", "Heavy or tall vehicle on steep grade or tight radius"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional", "notes": "Advisory speed derived from geometry is a RoadOS recommendation, never a legal limit." },
+    "detectionMethods": ["map_data", "camera", "motion_sensor"],
+    "confidence": { "minimumToDisplay": 0.6, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["radius_m", "gradient_percent", "carriageway_width_m"] },
+    "references": [
+      { "doc": "IRC-67", "relation": "inspired_by_convention" },
+      { "doc": "VIENNA-1968", "relation": "inspired_by_convention" },
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "road_damage", "code": "RDM", "letter": "F", "label": "Road damage", "section": "hazards",
+    "description": "Surface distress, structural failures, open utilities and edge damage.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["physical_size", "height_or_depth", "lane_position", "approach_speed", "visibility", "surface_condition", "vehicle_type"],
+    "escalation": ["Depth exceeds vehicle ground-clearance margin", "Located in the vehicle's wheel path", "Water-filled or unlit so depth cannot be judged", "Two-wheeler approaching at speed"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["motion_sensor", "camera", "community_report", "manual_survey"],
+    "confidence": { "minimumToDisplay": 0.55, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["length_m", "width_m", "depth_mm", "lane_position"] },
+    "references": [
+      { "doc": "IRC-82", "relation": "related_guidance" },
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "speed_control", "code": "SPD", "letter": "G", "label": "Speed-control hazards", "section": "hazards",
+    "description": "Humps, breakers, rumble strips and sudden vertical changes — marked or unmarked.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["height_or_depth", "physical_size", "approach_speed", "visibility", "vehicle_type"],
+    "escalation": ["Unmarked or unpainted hump", "Height or profile beyond typical calming devices", "Approach speed high relative to hump profile", "Low ground-clearance vehicle"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional", "notes": "RoadOS may compute a crossing advisory speed. It is not a legal limit." },
+    "detectionMethods": ["motion_sensor", "camera", "community_report", "map_data"],
+    "confidence": { "minimumToDisplay": 0.55, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["height_mm", "length_m", "marked", "count"] },
+    "references": [
+      { "doc": "IRC-99", "relation": "related_guidance" },
+      { "doc": "IRC-67", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "temporary_obstacles", "code": "TMP", "letter": "H", "label": "Temporary obstacles", "section": "hazards",
+    "description": "Work-zone devices, construction equipment and temporary traffic arrangements.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["lane_position", "physical_size", "approach_speed", "visibility", "traffic_density"],
+    "escalation": ["Device inside a live lane without advance warning", "Fallen or displaced device", "Night-time without lighting or reflectors", "Workers or machinery active"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional", "notes": "Work-zone legal limits come only from signs or authority data." },
+    "detectionMethods": ["camera", "community_report", "authority_feed", "map_data"],
+    "confidence": { "minimumToDisplay": 0.55, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["lane_position", "length_m", "lanes_closed"] },
+    "references": [
+      { "doc": "IRC-SP-55", "relation": "related_guidance" },
+      { "doc": "MUTCD-11", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "debris", "code": "DEB", "letter": "I", "label": "Stones & road debris", "section": "hazards",
+    "description": "Loose objects and spilled material on the carriageway.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["physical_size", "height_or_depth", "lane_position", "approach_speed", "visibility"],
+    "escalation": ["Object height beyond ground clearance", "Object in the vehicle's lane", "Low visibility at detection distance", "Material reduces tyre grip"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["camera", "community_report", "motion_sensor"],
+    "confidence": { "minimumToDisplay": 0.55, "minimumToAlert": 0.7 },
+    "dimensions": { "measuredFields": ["size_class", "height_mm", "lane_position", "area_m2"] },
+    "references": [
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "environmental", "code": "ENV", "letter": "J", "label": "Environmental hazards", "section": "hazards",
+    "description": "Water, low-grip surfaces, weather and visibility conditions.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["height_or_depth", "visibility", "surface_condition", "approach_speed", "vehicle_type"],
+    "escalation": ["Water depth unknown or above wheel hub", "Visibility below stopping sight distance", "Low grip combined with braking or curve", "Two-wheeler exposure"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["camera", "weather_feed", "community_report", "vehicle_bus"],
+    "confidence": { "minimumToDisplay": 0.5, "minimumToAlert": 0.7 },
+    "dimensions": { "measuredFields": ["depth_mm", "visibility_m", "extent_m"] },
+    "references": [
+      { "doc": "IRC-67", "relation": "related_guidance" },
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "moving_hazards", "code": "MOV", "letter": "K", "label": "Moving hazards", "section": "hazards",
+    "description": "Road users, animals and vehicles whose behaviour creates conflict risk.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["lane_position", "approach_speed", "distance", "visibility", "traffic_density"],
+    "escalation": ["Time-to-collision below threshold", "Object moving into the vehicle's path", "Vulnerable road user", "Wrong-way movement"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["camera", "radar", "lidar", "v2x", "community_report"],
+    "confidence": { "minimumToDisplay": 0.6, "minimumToAlert": 0.8 },
+    "dimensions": { "measuredFields": ["relative_speed_kmh", "heading_deg", "lane_position"] },
+    "references": [
+      { "doc": "IRC-103", "relation": "related_guidance" },
+      { "doc": "MV-DR-2017", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "visibility_roadside", "code": "VIS", "letter": "L", "label": "Visibility & roadside hazards", "section": "hazards",
+    "description": "Missing or obscured guidance and roadside conditions that hide risk.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S2", "dynamicSeverity": true,
+    "severityFactors": ["visibility", "approach_speed", "lane_position", "distance"],
+    "escalation": ["Night-time operation", "Hidden element precedes a junction or curve", "Encroachment narrows the usable carriageway"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["camera", "community_report", "manual_survey", "map_data"],
+    "confidence": { "minimumToDisplay": 0.5, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["sight_distance_m", "clearance_m", "shoulder_width_m"] },
+    "references": [
+      { "doc": "IRC-SP-88", "relation": "related_guidance" },
+      { "doc": "IRC-67", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "bridge_structures", "code": "BRG", "letter": "M", "label": "Bridge & special structures", "section": "hazards",
+    "description": "Bridges, flyovers, tunnels, embankments and slope failures.",
+    "frame": "roados_hazard", "standardStatus": "non_standard_hazard", "severityDefault": "S3", "dynamicSeverity": true,
+    "severityFactors": ["physical_size", "height_or_depth", "approach_speed", "visibility", "vehicle_type"],
+    "escalation": ["Structural failure or collapse reported", "Vehicle height or weight exceeds clearance", "Flooding of the structure", "Missing edge protection"],
+    "speed": { "legalLimit": "independent", "advisory": "conditional" },
+    "detectionMethods": ["map_data", "camera", "authority_feed", "community_report"],
+    "confidence": { "minimumToDisplay": 0.55, "minimumToAlert": 0.75 },
+    "dimensions": { "measuredFields": ["clearance_m", "width_m", "length_m"] },
+    "references": [
+      { "doc": "MORTH-SPEC", "relation": "related_guidance" },
+      { "doc": "IRC-SP-88", "relation": "related_guidance" }
+    ]
+  },
+  {
+    "id": "vehicle_context", "code": "VEH", "letter": "N", "label": "Vehicle context", "section": "context",
+    "description": "Ego-vehicle state used to personalise severity and advisory speed.",
+    "frame": "roados_context", "standardStatus": "roados_extension", "severityDefault": "S1", "dynamicSeverity": false,
+    "severityFactors": [],
+    "escalation": ["Context data unavailable — downstream severity must degrade gracefully"],
+    "speed": { "legalLimit": "not_applicable", "advisory": "never" },
+    "detectionMethods": ["vehicle_bus", "manual_survey"],
+    "confidence": { "minimumToDisplay": 0.0, "minimumToAlert": 1.0 },
+    "dimensions": { "measuredFields": [] },
+    "references": [
+      { "doc": "ISO-2575", "relation": "related_guidance" },
+      { "doc": "ISO-15008", "relation": "related_guidance" }
+    ]
+  }
+]
